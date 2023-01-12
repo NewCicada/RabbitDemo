@@ -1,17 +1,17 @@
 <template>
-    <router-view />
+  <router-view />
 </template>
 
 <script>
 export default {
-    setup() {}
-}
+  setup() {},
+};
 </script>
 
 <style lang="less">
 //@import "./assets/styles/variables";
 #app {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
