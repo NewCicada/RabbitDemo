@@ -17,7 +17,7 @@ import lazy from "@/components/directives/lazy";
 //#region[批量注册组件]
 // 1.获取模块的路径集合
 const importFn = require.context("./", false, /\.vue$/);
-console.dir(importFn);
+// console.dir(importFn);
 // 2. 获取到导入的文件的路径
 const keys = importFn.keys();
 //#endregion
