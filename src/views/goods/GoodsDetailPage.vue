@@ -38,7 +38,10 @@
               :max="goodsDetail.inventory"
               v-model="count"
             />
-            <XtxButton type="primary" :style="{ marginTop: '20px' }"
+            <XtxButton
+              type="primary"
+              :style="{ marginTop: '20px' }"
+              @click="addCart"
               >加入购物车</XtxButton
             >
           </div>
@@ -95,10 +98,10 @@ export default {
     AppLayout,
   },
   setup() {
-    const { result: goodsDetail, onSpecChange, count } = useGoods();
+    const { result: goodsDetail, onSpecChange, count, addCart } = useGoods();
     // 通过provide 注入goodsDetail数据
     provide("goodsDetail", goodsDetail);
-    return { goodsDetail, onSpecChange, count };
+    return { goodsDetail, onSpecChange, count, addCart };
   },
 };
 </script>

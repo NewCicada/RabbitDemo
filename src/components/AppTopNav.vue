@@ -6,7 +6,7 @@
           <li>
             <a href="javascript:"><i class="iconfont icon-user"></i>用户</a>
           </li>
-          <li><a href="javascript:">退出登录</a></li>
+          <li><a href="javascript:" @click="logout(this)">退出登录</a></li>
         </template>
         <template v-else>
           <li><RouterLink to="/login">请先登录</RouterLink></li>
@@ -23,20 +23,32 @@
     </div>
   </nav>
 </template>
+
 <script>
 // 导入vuex
 import { useStore } from "vuex";
+import { useRouter } from "vue-router";
 
 export default {
   name: "AppTopNav",
   setup() {
     // 使用vuex
     const store = useStore();
+    // 使用router
+    const router = useRouter();
     // 获取用户信息
     const user = store.state["user"];
 
+    const logout = (instance) => {
+      store.commit("user/setUser", {});
+      router.push("/login").then(() => {
+        instance.$message({ type: "success", text: "退出成功" });
+      });
+    };
+
     return {
       user,
+      logout,
     };
   },
 };

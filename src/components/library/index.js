@@ -11,7 +11,7 @@
 //#endregion
 
 //#region [全局指令]
-import lazy from "@/components/directives/lazy";
+import directiveLazy from "@/components/directives/lazy";
 //#endregion
 
 // 导入Message
@@ -31,7 +31,8 @@ const library = {
     // app.component(XtxSkeleton.name, XtxSkeleton);
     // app.component(XtxCarousel.name, XtxCarousel);
     // app.component(XtxMore.name, XtxMore);
-    app.directive("lazy", lazy);
+    // 注册指令
+    directiveLazy(app);
     // 3.批量导入组件
     keys.forEach((item) => {
       const component = importFn(item).default;
