@@ -4,7 +4,9 @@
       <ul>
         <template v-if="user.profile.token">
           <li>
-            <a href="javascript:"><i class="iconfont icon-user"></i>用户</a>
+            <a href="javascript:"
+              ><i class="iconfont icon-user"></i>{{ user.profile.account }}</a
+            >
           </li>
           <li><a href="javascript:" @click="logout(this)">退出登录</a></li>
         </template>
@@ -40,7 +42,8 @@ export default {
     const user = store.state["user"];
 
     const logout = (instance) => {
-      store.commit("user/setUser", {});
+      store.commit("user/setUser", {}); //清空用户信息
+      store.commit("cart/setCart", []); //清空购物车
       router.push("/login").then(() => {
         instance.$message({ type: "success", text: "退出成功" });
       });

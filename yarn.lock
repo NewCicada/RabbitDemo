@@ -3147,6 +3147,11 @@
   dependencies:
     "assert-plus" "^1.0.0"
 
+"dayjs@^1.10.7":
+  "integrity" "sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig=="
+  "resolved" "https://registry.npmmirror.com/dayjs/-/dayjs-1.10.7.tgz"
+  "version" "1.10.7"
+
 "debug@^2.2.0":
   "integrity" "sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8="
   "resolved" "https://registry.npmmirror.com/debug/download/debug-2.6.9.tgz"
