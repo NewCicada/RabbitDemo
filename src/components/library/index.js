@@ -14,6 +14,9 @@
 import lazy from "@/components/directives/lazy";
 //#endregion
 
+// 导入Message
+import Message from "@/components/library/Message";
+
 //#region[批量注册组件]
 // 1.获取模块的路径集合
 const importFn = require.context("./", false, /\.vue$/);
@@ -34,6 +37,8 @@ const library = {
       const component = importFn(item).default;
       app.component(component.name, component);
     });
+    // 将 Message 方法挂载到全局属性中
+    app.config.globalProperties.$message = Message;
   },
 };
 

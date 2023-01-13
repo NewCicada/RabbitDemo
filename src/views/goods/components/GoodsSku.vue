@@ -40,9 +40,9 @@ export default {
       default: () => [],
     },
   },
-  setup(props) {
+  setup(props, { emit }) {
     // 千言万语都在 useGoodsSku 当中
-    const { updateSpecSelected } = useGoodsSku(props);
+    const { updateSpecSelected } = useGoodsSku(props, emit);
     return { updateSpecSelected };
   },
   // setup(props) {

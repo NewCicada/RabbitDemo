@@ -1442,7 +1442,7 @@
   optionalDependencies:
     "prettier" "^1.18.2 || ^2.0.0"
 
-"@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.0.0-beta.18":
+"@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.0.0-beta.15", "@vue/devtools-api@^6.0.0-beta.18":
   "integrity" "sha1-tUBcmoT7RGh9BefEx4VLFjkUEQY="
   "resolved" "https://registry.npmmirror.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.20.tgz?cache=0&sync_timestamp=1635944976169&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vue%2Fdevtools-api%2Fdownload%2F%40vue%2Fdevtools-api-6.0.0-beta.20.tgz"
   "version" "6.0.0-beta.20"
@@ -8491,6 +8491,13 @@
   "integrity" "sha1-IpnwLG3tMNSllhsLn3RSShj2NPw="
   "resolved" "https://registry.nlark.com/vary/download/vary-1.1.2.tgz"
   "version" "1.1.2"
+
+"vee-validate@^4.5.6":
+  "integrity" "sha512-9N0GgCskOkZ0aDvMNv+N40RO9g3T1vipgdEDqPWQlOqJnz5XlvJZnjMQvTuPQGlAd9TFaW+3gl11mxZDC1Mrsg=="
+  "resolved" "https://registry.npmmirror.com/vee-validate/-/vee-validate-4.5.6.tgz"
+  "version" "4.5.6"
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.15"
 
 "vendors@^1.0.0":
   "integrity" "sha1-4rgApT56Kbk1BsPPQRANFsTErY4="
